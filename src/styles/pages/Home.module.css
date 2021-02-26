@@ -10,7 +10,7 @@
 
 .container section {
   flex: 1;
-  
+  padding-top: 2.4rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 6.25rem;
