@@ -8,7 +8,7 @@ export default createGlobalStyle `
   }
 
   :root {
-    --white: #F25489;
+    --white: #FFF;
     --background: ${props => props.theme.colors.background};
     --gray-line: #DCDDE0;
     --text: ${props => props.theme.colors.text};
