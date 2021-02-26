@@ -1,0 +1,10 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 2rem 0 0 0;
+}
+
+.toogleButton {
+  margin-left: 20rem;
+}
