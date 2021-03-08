@@ -1,4 +1,4 @@
-import React, { useContext, createContext, useState, useEffect } from 'react';
+import React, { useContext, createContext, useState, useEffect, ReactNode } from 'react';
 import { DefaultTheme, ThemeProvider } from 'styled-components';
 import { dark, light} from '../styles/themes';
 
@@ -7,9 +7,13 @@ interface ThemeContextData {
   
   ToggleTheme(): void;
 }
+interface ThemeProviderProps {
+  children: ReactNode;
+}
+
 const ThemeContext = createContext({} as ThemeContextData);
 
-export const ThemesProvider: React.FC = ({ children }) => {
+export const ThemesProvider: React.FC = ({ children }: ThemeProviderProps) => {
   const [theme, setTheme] = useState<DefaultTheme>(light);
 
   useEffect(() => {
